@@ -10,9 +10,9 @@ body {
 }
 
 .logo {
-	display: block;
-	margin-left: 1150px;
-	margin-top: -120px;
+	float: left;
+	margin-left: 20em;
+	margin-top: -130px;
 }
 
 h1, #feedbackYes, #feedbackNo {
@@ -59,9 +59,7 @@ h3, .question, #answer_holder, #factInfo {
 #buttonSubmit {
 	width: 100%;
 	text-align: center;
-	vertical-align: top;
-
-	
+	vertical-align: top;	
 }
 
 #submit {
@@ -102,9 +100,8 @@ h3, .question, #answer_holder, #factInfo {
 	font-weight: 100;
 	font-size: 1.225rem;
 	margin-top: -50px;
-
 }
 
-#factQuestion2, #factQuestion3, #factQuestion4, #factQuestion1 {
+#factQuestion1, #factQuestion2, #factQuestion3, #factQuestion4 {
 	display: none;
 }
