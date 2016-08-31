@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
 	<meta charset="UTF-8">
 	<title>Trini Trivia Quiz</title>
 </head>
 <body>
-	
+		<h1>Trini Trivia Quiz</h1>
+		<img class="logo" src="images/ttanimatedflag.gif" alt="Karma" width="50">
+		<h3>Are you a 'Trini to de Bone'? Answer the questions below to find out!</h3>
+		
+		<div id="questionSegment">
+			<span class="question">Q.1: What Trinidad and Tobago festival takes place just before Ash Wednesday each year?</span><br>
+			<div id="answer_holder">
+				<input type="radio" name="option" class="option" value="0"><span class="answer">Mardi Gras</span><br>
+				<input type="radio" name="option" class="option" value="1"><span class="answer">Carnival</span><br>
+				<input type="radio" name="option" class="option" value="2"><span class="answer">Cropover</span><br>
+			</div>
+			<div id="buttonSubmit">
+				<input type="button" id="submit" value="Submit Answer"><span id="hint"></span>
+			</div>
+		</div>
+		<div id="factInfo">
+
+				<span id="feedbackNo">Sorry wrong answer.</span><br>
+				<span id="feedbackYes">You are correct!</span><br>
+
+				<span id="factResponse">Carnival is an annual event celebrated on the Monday and Tuesday before Ash Wednesday. It is well known for participants' colorful costumes and fun celebrations.</span>
+		</div>
 </body>
 </html>

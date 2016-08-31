@@ -1,68 +1,91 @@
 body {
-	background-color: #000;
-}
-
-.container {
 	background-color: #fff;
-	margin-top: 100px;
-	padding-left: 100px;
-	min-width: 1200px;
-	height: 500px;
-	position: relative;
-	z-index: 1;
-	border-top-style: solid;
-	border-bottom-style: solid;
-	border-color: red;
-	border-width: 10px;
-}
-
-.ryu {
-	width: 659px;
-	height: 494px;
-}
-
-.ryu-still, .ryu-ready, .ryu-throwing, .ryu-coolmusic {
-	width: 659px;
-	height: 494px;
-}
-
-.ryu-ready, .ryu-throwing, .ryu-coolmusic {
-	display: none;
-}
-
-.ryu-ready {
-	background-image: url('../images/ryu-ready-position.gif');
-
-}
-
-.ryu-still {
-	background-image: url('../images/ryu-standing-still.png');
-	
-}
-
-.ryu-throwing {
-	background-image: url('../images/ryu-throwing-hadouken.png');
-	
-}
-
-.ryu-coolmusic {
-	background-image: url('../images/ryu-cool.gif');
-	
-}
-.ryu-still, .ryu-ready, .ryu-throwing .hadouken, .ryu-cool {
+	font-family: Helvetica, Arial, Verdana, sans-serif;	
+	background-image: url('../images/ttbackground.png');
 	background-repeat: no-repeat;
+	background-size: cover;	
+	background-position: center bottom;
+	height: 90rem;
+	overflow: auto;
 }
 
-.hadouken {
-	background-image: url('../images/hadouken.gif');
-	width: 156px;
-	height: 90px;
-	float: left;
+.logo {
+	display: block;
+	margin-left: 1100px;
+	margin-top: -120px;
+}
+
+h1, h3, #feedbackYes, #feedbackNo, #factResponse {
+	font-family: 'Kaushan Script', cursive;
+	text-align: center;
+}
+
+h1 {
+	margin: 70px auto;
+	font-size: 3.125rem;
+	color: red;
+	outline-color: black;
+	outline-width: 100;
+}
+
+h3 {
+	font-size: 1.525rem;
+	font-weight: 200;
+}
+
+#questionSegment {
+	width: 500px;
+	height: 400px;
+	margin: 0 auto;
+	font-family: sans-serif;
+	font-size: 25px;
+	padding-top: 80px;
+	color: red;
+}
+
+#answer_holder {
+	display: inline-block;
+	margin-left: 180px;
+	margin-top: 20px;
+	line-height: 35px;
+	color: black;
+}
+#buttonSubmit {
+	margin-left: 180px;
+}
+
+#submit {
+	font-size: 18px;
+	margin-top: 20px;
+	border-radius: 5px;
+	color: black;
+}
+
+#feedbackYes {
+	color: #B22222;
+}
+
+#feedbackYes, #feedbackNo {
+	width: 100%;
+	text-align: center;
+	vertical-align: top;
+	margin-top: -85px;
+	font-weight: 100;
+	font-size: 1.525rem;
+	display: inline-block;
+}
+
+#feedbackNo {
 	display: none;
-	position: absolute;
-	z-index: 10;
-	top: 175px;
-	left: 600px;
 }
 
-
+#factResponse {
+	width: 40%;
+	font-weight: 100;
+	font-size: 1.525rem;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 70px;
+	padding-left: 380px;
+	padding-right: 380px;
+}
