@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Philosopher" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 	<meta charset="UTF-8">
@@ -14,7 +14,8 @@
 		<img class="logo" src="images/ttanimatedflag.gif" alt="Karma" width="50">
 		<h3>Are you a 'Trini to de Bone'? Answer the questions below to find out!</h3>
 		
-		<div id="questionSegment">
+	<div id="questionSegment">
+		<div class="question1">
 			<span class="question">Q.1: What Trinidad and Tobago festival takes place just before Ash Wednesday each year?</span><br>
 			<div id="answer_holder">
 				<input type="radio" name="option" class="option" value="0"><span class="answer">Mardi Gras</span><br>
@@ -25,12 +26,67 @@
 				<input type="button" id="submit" value="Submit Answer"><span id="hint"></span>
 			</div>
 		</div>
-		<div id="factInfo">
-
+		<div class="question2">
+			<span class="question">Q.2: What is the name of this tasty Trinidadian delicacy?</span><br>
+			<div id="answer_holder">
+				<input type="radio" name="option" class="option" value="0"><span class="answer">Doubles</span><br>
+				<input type="radio" name="option" class="option" value="1"><span class="answer">Roti</span><br>
+				<input type="radio" name="option" class="option" value="2"><span class="answer">Saheena</span><br>
+			</div>
+			<div id="buttonSubmit">
+				<input type="button" id="submit" value="Submit Answer"><span id="hint"></span>
+			</div>
+		</div>
+		<div class="question3">
+			<span class="question">Q.3: Which famous dance was created in Trinidad and Tobago?</span><br>
+			<div id="answer_holder">
+				<input type="radio" name="option" class="option" value="0"><span class="answer">The Gangnam Style</span><br>
+				<input type="radio" name="option" class="option" value="1"><span class="answer">The Limbo</span><br>
+				<input type="radio" name="option" class="option" value="2"><span class="answer">The Dutty Wine</span><br>
+			</div>
+			<div id="buttonSubmit">
+				<input type="button" id="submit" value="Submit Answer"><span id="hint"></span>
+			</div>
+		</div>
+		<div class="question4">
+			<span class="question">Q.4: Christmas time in Trinidad and Tobago is full of festivities. What type of music is largely performed?</span><br>
+			<div id="answer_holder">
+				<input type="radio" name="option" class="option" value="0"><span class="answer">Rhythm n Blues</span><br>
+				<input type="radio" name="option" class="option" value="1"><span class="answer">Hip Hop</span><br>
+				<input type="radio" name="option" class="option" value="2"><span class="answer">Parang</span><br>
+			</div>
+			<div id="buttonSubmit">
+				<input type="button" id="submit" value="Submit Answer"><span id="hint"></span>
+			</div>
+		</div>
+		<div class="question5">
+			<span class="question">Q.5: The first ever Black Miss Universe came from Trinidad and Tobago.  What was her name?</span><br>
+			<div id="answer_holder">
+				<input type="radio" name="option" class="option" value="0"><span class="answer">Wendy Fitzwilliam</span><br>
+				<input type="radio" name="option" class="option" value="1"><span class="answer">Giselle Laronde West</span><br>
+				<input type="radio" name="option" class="option" value="2"><span class="answer">Janelle Penny Commissiong</span><br>
+			</div>
+			<div id="buttonSubmit">
+				<input type="button" id="submit" value="Submit Answer"><span id="hint"></span>
+			</div>
+		</div>
+	</div>
+		<div id="feedback">
 				<span id="feedbackNo">Sorry wrong answer.</span><br>
 				<span id="feedbackYes">You are correct!</span><br>
+		</div>
 
-				<span id="factResponse">Carnival is an annual event celebrated on the Monday and Tuesday before Ash Wednesday. It is well known for participants' colorful costumes and fun celebrations.</span>
+		<div id="factInfo">
+
+				<span id="factQuestion1">Carnival is an annual event celebrated on the Monday and Tuesday before Ash Wednesday. It is well known for participants' colorful costumes and fun celebrations.</span>
+
+				<span id="factQuestion2">Doubles is a common street food in Trinidad and Tobago. It is a sandwich made with two baras (flat fried bread) with curried channa, topped with mango, cucumber, sweet sauce and extra pepper!</span>
+
+				<span id="factQuestion3">Limbo dance originated as an event that took place at wakes in Trinidad and Tobago. It was popularized by dance pioneer Julia Edwards and her company.</span>
+
+				<span id="factQuestion4">Parang music was brought to Trinidad by Venezuelan migrants. Around Christmas time, there is usually a competition held in Paramin for all parranderos.</span>
+
+				<span id="factQuestion5">Janelle Penny Commissiong won the title in 1977 at the Miss Universe pageant which was held in the Dominican Republic.</span>
 		</div>
 </body>
 </html>

@@ -11,11 +11,11 @@ body {
 
 .logo {
 	display: block;
-	margin-left: 1100px;
+	margin-left: 1150px;
 	margin-top: -120px;
 }
 
-h1, h3, #feedbackYes, #feedbackNo, #factResponse {
+h1, #feedbackYes, #feedbackNo {
 	font-family: 'Kaushan Script', cursive;
 	text-align: center;
 }
@@ -31,13 +31,18 @@ h1 {
 h3 {
 	font-size: 1.525rem;
 	font-weight: 200;
+	text-align: center;
+}
+
+h3, .question, #answer_holder, #factInfo {
+	font-family: 'Philosopher', sans-serif;
 }
 
 #questionSegment {
-	width: 500px;
+	width: 450px;
+	text-align: justify;
 	height: 400px;
 	margin: 0 auto;
-	font-family: sans-serif;
 	font-size: 25px;
 	padding-top: 80px;
 	color: red;
@@ -45,13 +50,18 @@ h3 {
 
 #answer_holder {
 	display: inline-block;
-	margin-left: 180px;
+	margin-left: 100px;
 	margin-top: 20px;
 	line-height: 35px;
 	color: black;
 }
+
 #buttonSubmit {
-	margin-left: 180px;
+	width: 100%;
+	text-align: center;
+	vertical-align: top;
+
+	
 }
 
 #submit {
@@ -59,6 +69,11 @@ h3 {
 	margin-top: 20px;
 	border-radius: 5px;
 	color: black;
+	background-color: pink;
+}
+
+.question1, .question2, .question3, .question4 {
+	display: none;
 }
 
 #feedbackYes {
@@ -79,13 +94,17 @@ h3 {
 	display: none;
 }
 
-#factResponse {
-	width: 40%;
+#factInfo {
+	width: 450px;
+	text-align: justify;
+	height: 400px;
+	margin: 0 auto;
 	font-weight: 100;
-	font-size: 1.525rem;
-	display: inline-block;
-	vertical-align: top;
-	margin-top: 70px;
-	padding-left: 380px;
-	padding-right: 380px;
+	font-size: 1.225rem;
+	margin-top: -50px;
+
+}
+
+#factQuestion2, #factQuestion3, #factQuestion4, #factQuestion1 {
+	display: none;
 }
