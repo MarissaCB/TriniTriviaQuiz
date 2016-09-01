@@ -8,10 +8,7 @@ $( document ).ready(function() {
 		$("#count").html(function(i, val) { return +val+1 });       
 });
 
-var question = {
-	question: ""
 
-};	
 	
 /*--- Display information modal box ---*/
   	$(".score").click(function(){
