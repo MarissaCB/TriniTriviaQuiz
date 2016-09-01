@@ -28,6 +28,15 @@ h1 {
 	outline-width: 100;
 }
 
+h2 {
+	margin: 0 auto;
+	float: right;
+	margin-right: 150px;
+	font-size: 20px;
+	padding-top: 80px;
+	display: inline-block;
+}
+
 h3 {
 	margin-top: -40px;
 	font-size: 1.525rem;
@@ -35,7 +44,7 @@ h3 {
 	text-align: center;
 }
 
-h3, .question, #answer_holder, #factInfo {
+h2, h3, .question, #answer_holder, #factInfo, .resultPage {
 	font-family: 'Philosopher', sans-serif;
 }
 
@@ -63,7 +72,7 @@ h3, .question, #answer_holder, #factInfo {
 	vertical-align: top;	
 }
 
-#submit {
+#submitButton {
 	font-size: 18px;
 	margin-top: 20px;
 	border-radius: 5px;
@@ -86,10 +95,6 @@ h3, .question, #answer_holder, #factInfo {
 	margin-top: -85px;
 	font-weight: 100;
 	font-size: 1.525rem;
-	display: inline-block;
-}
-
-#feedbackNo {
 	display: none;
 }
 
@@ -101,8 +106,71 @@ h3, .question, #answer_holder, #factInfo {
 	font-weight: 100;
 	font-size: 1.225rem;
 	margin-top: -50px;
+	display: none;
 }
 
 #factQuestion2, #factQuestion3, #factQuestion4, #factQuestion5 {
 	display: none;
 }
+
+.resultPage {
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background: ;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	z-index: 1000;
+	display: block;
+}
+
+.content {
+	color: #fff;
+	background: #d22d2d;
+	position: relative;
+	height: 500px;
+	width: 800px;
+	border-radius: 3px;
+	top: 15%;
+	margin: auto auto;
+	border: 1px solid rgba(0,0,0,0.1);
+
+}
+
+.content h3 {
+	margin: 0;
+	padding: 0.4em;
+	text-align: center;
+	font-size: 2.4em;
+	font-weight: 300;
+	opacity: 0.8;
+	background: rgba(0,0,0,0.1);
+	border-radius: 3px 3px 0 0;
+}
+
+.content h2 {
+	margin: 0;
+	padding: 0.4em;
+	text-align: center;
+}
+
+.content > ul li {
+	width: 700px;
+	padding: 5px 0;
+	display: block;	
+	margin-top: 50px;
+	text-align: left;
+	font-size: 1.5em;
+}
+
+.content > a {
+	font-size: 20px;
+	margin-top: 50px;
+	border-radius: 5px;
+	color: black;
+	background-color: pink;
+	padding: 0.5em 1em;
+}
+
