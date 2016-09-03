@@ -4,7 +4,7 @@ $( document ).ready(function() {
 
 
 
-var questions = [
+var allQuestions = [
     {
     question : "Q.1: What popular sandwich was invented in Trinidad and can be found on almost any street corner?",
    	choices : ["Doubles", "BLT Sandwich", "Roti" ], 

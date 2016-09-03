@@ -12,101 +12,45 @@
 <body>
 		<h1>Trini Trivia Quiz</h1>
 		<img class="logo" src="images/ttanimatedflag.gif" alt="Karma" width="80">
-		
 		<h3>Are you a 'Trini to de Bone'? Answer the questions below to find out!</h3>
-		
 		<h2>Q<span id="count">1</span> of 5</h2>
 
 	<div id="questionSegment">
 		<div class="question1">
-			<span class="question">Q.1: What popular sandwich was invented in Trinidad and can be found on almost any street corner?</span><br>
+				<span class="question">Q.1: What popular sandwich was invented in Trinidad and can be found on almost any street corner?</span><br>
 			<div id="answer_holder">
-				<input type="radio" name="option" class="option" value="0"><span class="answer">Doubles</span><br>
-				<input type="radio" name="option" class="option" value="1"><span class="answer">BLT Sandwich</span><br>
-				<input type="radio" name="option" class="option" value="2"><span class="answer">Roti</span><br>
+				<input type="radio" name="option" value="0" id=option0><span class="answer">Doubles</span><br>
+				<input type="radio" name="option" value="1" id=option1><span class="answer">BLT Sandwich</span><br>
+				<input type="radio" name="option" value="2" id=option2><span class="answer">Roti</span><br>
 			</div>
+		
 			<div id="buttonSubmit">
 				<input type="submit" id="submitButton" value="Submit Answer"><span id="hint"></span>
 			</div>
 		</div>
-<!-- Questions 		<div class="question2">
-			<span class="question">Q.2: What Trinidad and Tobago festival takes place just before Ash Wednesday each year?</span><br>
-			<div id="answer_holder">
-				<input type="radio" name="option" class="option" value="0"><span class="answer">Mardi Gras</span><br>
-				<input type="radio" name="option" class="option" value="1"><span class="answer">Carnival</span><br>
-				<input type="radio" name="option" class="option" value="2"><span class="answer">Cropover</span><br>
-			</div>
-			<div id="buttonSubmit">
-				<input type="button" id="submit" value="Submit Answer"><span id="hint"></span>
-			</div>
-		</div>
-		<div class="question3">
-			<span class="question">Q.3: Which famous dance was created in Trinidad and Tobago?</span><br>
-			<div id="answer_holder">
-				<input type="radio" name="option" class="option" value="0"><span class="answer">The Gangnam Style</span><br>
-				<input type="radio" name="option" class="option" value="1"><span class="answer">The Limbo</span><br>
-				<input type="radio" name="option" class="option" value="2"><span class="answer">The Dutty Wine</span><br>
-			</div>
-			<div id="buttonSubmit">
-				<input type="button" id="submit" value="Submit Answer"><span id="hint"></span>
-			</div>
-		</div>
-		<div class="question4">
-			<span class="question">Q.4: Christmas time in Trinidad and Tobago is full of festivities. What type of music is largely performed?</span><br>
-			<div id="answer_holder">
-				<input type="radio" name="option" class="option" value="0"><span class="answer">Rhythm n Blues</span><br>
-				<input type="radio" name="option" class="option" value="1"><span class="answer">Hip Hop</span><br>
-				<input type="radio" name="option" class="option" value="2"><span class="answer">Parang</span><br>
-			</div>
-			<div id="buttonSubmit">
-				<input type="button" id="submit" value="Submit Answer"><span id="hint"></span>
-			</div>
-		</div>
-		<div class="question5">
-			<span class="question">Q.5: The first ever Black Miss Universe came from Trinidad and Tobago.  What was her name?</span><br>
-			<div id="answer_holder">
-				<input type="radio" name="option" class="option" value="0"><span class="answer">Wendy Fitzwilliam</span><br>
-				<input type="radio" name="option" class="option" value="1"><span class="answer">Giselle Laronde West</span><br>
-				<input type="radio" name="option" class="option" value="2"><span class="answer">Janelle Penny Commissiong</span><br>
-			</div>
-			<div id="buttonSubmit">
-				<input type="button" id="submit" value="Submit Answer"><span id="hint"></span>
-			</div>
-		</div>
-	-->
 	</div>
+		
 		<div id="feedback">
 				<span id="feedbackNo">Sorry wrong answer.</span><br>
 				<span id="feedbackYes">You are correct!</span><br>
 		</div>
+		
 		<div id="factInfo">
 				<span id="factQuestion1">Doubles is a common street food in Trinidad and Tobago. It is a sandwich made with two baras (flat fried bread) with curried channa, topped with mango, coconut, kutchela, cucumber, sweet sauce and extra pepper!</span>
-
-<!-- Facts 		
-				<span id="factQuestion2">Carnival is an annual event celebrated on 	the Monday and Tuesday before Ash Wednesday. It is well known for participants' colorful costumes and fun celebrations.</span>
-
-				<span id="factQuestion3">Limbo dance originated as an event that took place at wakes in Trinidad and Tobago. It was popularized by dance pioneer Julia Edwards and her company.</span>
-
-				<span id="factQuestion4">Parang music was brought to Trinidad by Venezuelan migrants. Around Christmas time, there is usually a competition held in Paramin for all parranderos.</span>
-
-				<span id="factQuestion5">Janelle Penny Commissiong won the title in 1977 at the Miss Universe pageant which was held in the Dominican Republic.</span>
-		</div>
--->			
 				<a class="score" href="#">See Score</a>
-			<div class="resultPage" id="results">
+		</div>	
+			
+		<div class="resultPage" id="results">
 			<div class="content">
-				<h3>Let's see your score?</h3>
-				
+				<h3>Let's see your score?</h3>	
 				<h2>You scored <span id="userCount">0</span> of 5!!</h2>
-
 				<ul>
-				<li>0-2 correct - You definitely need some Trinbagonians in your life.</li>
-				<li>3-4 correct - You just might have some Trini blood in you.</li>
-				<li>All 5 correct - You're a true <strong>TRINI TO DE BONE!!!</strong> </li>
+					<li>0-2 correct - You definitely need some Trinbagonians in your life</li>
+					<li>3-4 correct - You just might have some Trini blood in you.</li>
+					<li>All 5 correct - You're a true <strong>TRINI TO DE BONE!!!</strong> </li>
 				</ul>
 				<a class="close" href="#">Try Again</a>
 			</div>
-		</div>
-	</div>
+		</div>	
 </body>
 </html>
