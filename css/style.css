@@ -59,11 +59,11 @@ h2, h3, .question, #answer_holder, #factInfo, .resultPage {
 }
 
 #answer_holder {
-	display: inline-block;
 	margin-left: 100px;
 	margin-top: 20px;
 	line-height: 35px;
 	color: black;
+	list-style: none;
 }
 
 #buttonSubmit {
@@ -80,9 +80,6 @@ h2, h3, .question, #answer_holder, #factInfo, .resultPage {
 	background-color: pink;
 }
 
-.question2, .question3, .question4, .question5 {
-	display: none;
-}
 
 #feedbackYes {
 	color: #B22222;
@@ -95,7 +92,7 @@ h2, h3, .question, #answer_holder, #factInfo, .resultPage {
 	margin-top: -85px;
 	font-weight: 100;
 	font-size: 1.525rem;
-	display: none;
+
 }
 
 #factInfo {
@@ -106,7 +103,7 @@ h2, h3, .question, #answer_holder, #factInfo, .resultPage {
 	font-weight: 100;
 	font-size: 1.225rem;
 	margin-top: -50px;
-	display: none;
+	
 }
 
 #factQuestion2, #factQuestion3, #factQuestion4, #factQuestion5 {

@@ -8,9 +8,7 @@ var allQuestions = [
     {
     question : "Q.1: What popular sandwich was invented in Trinidad and can be found on almost any street corner?",
    	choices : ["Doubles", "BLT Sandwich", "Roti" ], 
-    answer : "Doubles"
-    questionNumber : 0,
-    correct : 0,
+    answer : "Doubles",
     fact : "Doubles is a common street food in Trinidad and Tobago. It is a sandwich made with two baras (flat fried bread) with curried channa, topped with mango, coconut, kutchela, cucumber, sweet sauce and extra pepper!"
     },
 
@@ -18,38 +16,89 @@ var allQuestions = [
     question : "Q.2: What Trinidad and Tobago festival takes place just before Ash Wednesday each year?", 
     choices : ["Mardi Gras", "Carnival", "Cropover"], 
     answer : "Carnival",
-    questionNumber : 1,
-    correct : 1,
     fact : "Carnival is an annual event celebrated on the Monday and Tuesday before Ash Wednesday. It is well known for participants' colorful costumes and fun celebrations."
-    }
+    },
 
 	{
     question : "Q.3: Which famous dance was created in Trinidad and Tobago?", 
     choices : ["Gangnam Style", "Limbo", "Dutty Wine"], 
     answer : "Limbo",
-    questionNumber : 2,
-    correct : 1,
     fact : "Limbo dance originated as an event that took place at wakes in Trinidad and Tobago. It was popularized by dance pioneer Julia Edwards and her company."
-    }
+    },
 
     {
     question : "Q.4: Christmas time in Trinidad and Tobago is full of festivities. What type of music is usually performed?", 
     choices : ["Rhythm n Blues", "Hip Hop", "Parang"], 
     answer : "Parang",
-    questionNumber : 3,
-    correct : 2,
     fact : "Parang music was brought to Trinidad by Venezuelan migrants. Around Christmas time, there is usually a competition held in Paramin for all parranderos."
-    }
+    },
 
     {
     question : "Q.5: The first ever Black Miss Universe came from Trinidad and Tobago.  What was her name?", 
     choices : ["Wendy Fitzwilliam", "Giselle Laronde West", "Janelle Penny Commissiong"], 
     answer : "Janelle Penny Commissiong",
-    questionNumber : 4,
-    correct : 2,
     fact : "Janelle Penny Commissiong won the title in 1977 at the Miss Universe pageant which was held in the Dominican Republic."
     }
 ]
+
+/*--- To change the questions---*/
+var correctAnswer = 0;
+var questionNumber = 0;
+var questionTotal = allQuestions.length;
+
+
+function createQuestion() {
+    $('.question').text(allQuestions[questionNumber].question);
+    var choicesTot = allQuestions[questionNumber].choices.length;
+    console.log(choicesTot);
+    console.log(allQuestions[questionNumber].question);
+    $('#answer_holder').empty();
+    for (var i = 0; i < choicesTot; i++) {
+        $('#answer_holder').append("<li><input type='radio' name='option' value='0' id='option0'>" + allQuestions[questionNumber].choices[i] + "</li>");
+    }
+}
+
+createQuestion();
+
+var userGuess
+ 
+//}); 
+    
+/*    $('#questionSegment').on('click', 'li', function(){
+           var userSelect = $(this).html();
+           console.log(userSelect);
+           var correctSelection = allQuestions[0].answer;
+           if (userSelect === correctSelection) {
+                userCorrect++;
+                console.log(userCorrect);
+           }
+    });
+    
+
+$('#questionSegment').on('click', 'li', function(){
+        if (questionNumber+1 === questionTotal) {
+            $('#statusReport').text("You got " + userCorrect + " out of " + questionTotal);
+        }
+        else {
+            questionNumber++;
+            createQuestion();
+        } 
+    });
+*/
+$("#submitButton").on("click", function(e){
+    e.preventDefault();
+    console.log(allQuestions[questionNumber].answer);
+    var correctAnswer = $(".question").val();  
+    //console.log(question);
+    questionNumber++;
+    createQuestion();
+    //console.log(allQuestions[0].answer); 
+
+//    if (correctAnswer == answer) { 
+//        $(" ").html(" ");
+
+//    }
+});
 
 
 /*--- To count the number of User guesses ---*/
@@ -68,5 +117,22 @@ var allQuestions = [
   		$(".resultPage").fadeOut(1000);
   	});
 
-});
+ });
+
+/*--- To start a new game       
+    $("a.new").on("click", function(e){
+    
+    e.preventDefault();
+    
+    answer = Math.floor((Math.random() * 100) + 1);
+    console.log("The secret number is: " + answer);
+    $("#count").html("0");
+    $("#userGuess").val("");
+    $("h2").text("Make your Guess!");
+
+ });---*/ 
+
+
+
+
 
