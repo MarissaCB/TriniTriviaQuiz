@@ -54,7 +54,7 @@ function createQuestion() {
     console.log(allQuestions[questionNumber].question);
     $('#answer_holder').empty();
     for (var i = 0; i < choicesTot; i++) {
-        $('#answer_holder').append("<li><input type='radio' name='option' value='0' id='option0'>" + allQuestions[questionNumber].choices[i] + "</li>");
+        $('#answer_holder').append("<li><input type='radio' name='option' value='" +allQuestions[questionNumber].choices[i]+"' id='option0'>" + allQuestions[questionNumber].choices[i] + "</li>");
     }
 }
 
@@ -64,45 +64,54 @@ createQuestion();
     $("#submitButton").on("click", function(e){
     e.preventDefault();
     console.log(allQuestions[questionNumber].answer);
-    var correctAnswer = $(".question").val();  
+    var correctAnswer = allQuestions[questionNumber].answer;
+    var userGuess = $('input[name=option]:checked').val();
+    console.log(userGuess);
+    if (correctAnswer == userGuess) {
+    $("#feedbackYes").show();
+    $("#feedbackNo").hide();
+}
+
+    else {
+    $("#feedbackNo").show();
+    $("#feedbackYes").hide();
+}  
+    console.log(allQuestions[questionNumber].fact);
+
     questionNumber++;
     createQuestion();
 
-
-/*--- To get correct answer---*/    
- var userGuess  
-
-    $("#submitButton").on("click", function(e){
-    if (userGuess === allQuestions[questionNumber].answer) {
-        console.log('#feedbackYes');
-    }
-
-    else {
-        console.log('#feedbackNo');
-    }
-    
-});
-    
-
 });
 
 
-/*--- To count the number of User guesses ---*/
-	$("#submitButton").on("click", function(e){
-		$("#count").html(function(i, val) { return +val+1 });       
-});
 
-	
+/*--- To get correct answer
 
-$('#questionSegment').on('click', 'li', function(){
-        if (questionNumber+1 === questionTotal) {
+function findAnswer() {
+var correctAnswer = allQuestions[questionNumber].answer;
+if (correctAnswer.checked === true) {
+       console.log($("#feedbackYes"));
+}
+
+else {
+  console.log($("#feedbackNo"));
+} 
+
+}
+
+findAnswer();--*/
+
+
+    /*        if (questionNumber+1 === questionTotal) {
             $('#statusReport').text("You got " + userCorrect + " out of " + questionTotal);
         }
         else {
             questionNumber++;
             createQuestion();
         } 
-    });
+ */
+
+    
 
 
 /*--- Display information modal box ---*/
@@ -113,23 +122,23 @@ $('#questionSegment').on('click', 'li', function(){
  /*--- Hide information modal box ---*/
   	$("a.close").click(function(){
   		$(".resultPage").fadeOut(1000);
-  	});
 
- });
+});
 
-/*--- To start a new game       
+
+});
+
+
+/*--- To start a new game      
     $("a.new").on("click", function(e){
     
     e.preventDefault();
     
-    answer = Math.floor((Math.random() * 100) + 1);
-    console.log("The secret number is: " + answer);
-    $("#count").html("0");
-    $("#userGuess").val("");
-    $("h2").text("Make your Guess!");
-
- });---*/ 
-
+    function createQuestion() {
+    }
+        $("#count").html("0");
+ }); 
+---*/ 
 
 
 

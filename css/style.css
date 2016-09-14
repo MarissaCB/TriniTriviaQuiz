@@ -92,6 +92,8 @@ h2, h3, .question, #answer_holder, #factInfo, .resultPage {
 	margin-top: -85px;
 	font-weight: 100;
 	font-size: 1.525rem;
+	display: none;
+	
 
 }
 
@@ -103,12 +105,10 @@ h2, h3, .question, #answer_holder, #factInfo, .resultPage {
 	font-weight: 100;
 	font-size: 1.225rem;
 	margin-top: -50px;
-	
-}
-
-#factQuestion2, #factQuestion3, #factQuestion4, #factQuestion5 {
 	display: none;
 }
+
+
 
 .resultPage {
 	width: 100%;
