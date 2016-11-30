@@ -42,13 +42,14 @@ var allQuestions = [
 ]
 
 /*--- To change the questions---*/
+var userCorrect = 0;
 var correctAnswer = 0;
 var questionNumber = 0;
 var questionTotal = allQuestions.length;
 
 
 function createQuestion() {
-    $('.question').text(allQuestions[questionNumber].question);
+    $(".question").text(allQuestions[questionNumber].question);
     var choicesTot = allQuestions[questionNumber].choices.length;
     console.log(choicesTot);
     console.log(allQuestions[questionNumber].question);
@@ -76,7 +77,7 @@ createQuestion();
     $("#feedbackNo").show();
     $("#feedbackYes").hide();
 }  
-    console.log(allQuestions[questionNumber].fact);
+    $("#factInfo").text(allQuestions[questionNumber].fact);
 
     questionNumber++;
     createQuestion();
@@ -85,33 +86,33 @@ createQuestion();
 
 
 
-/*--- To get correct answer
+/*--- To count correct answers
 
-function findAnswer() {
-var correctAnswer = allQuestions[questionNumber].answer;
-if (correctAnswer.checked === true) {
-       console.log($("#feedbackYes"));
+    $("#submitButton").on("click", function(){
+    if (questionNumber == questionTotal) {
+    $('#userCount').text("You scored " + userCorrect + " out of " + questionTotal);
 }
-
-else {
-  console.log($("#feedbackNo"));
-} 
-
-}
-
-findAnswer();--*/
-
-
-    /*        if (questionNumber+1 === questionTotal) {
-            $('#statusReport').text("You got " + userCorrect + " out of " + questionTotal);
-        }
-        else {
+    else {
             questionNumber++;
             createQuestion();
         } 
- */
 
-    
+});
+---*/
+
+/*--- To count questions
+
+    $("#submitButton").on("click", function(){
+    if (questionNumber == questionTotal) {
+    $('#userCount').text("You scored " + userCorrect + " out of " + questionTotal);
+}
+    else {
+            questionNumber++;
+            createQuestion();
+        } 
+
+});
+---*/
 
 
 /*--- Display information modal box ---*/
@@ -129,8 +130,8 @@ findAnswer();--*/
 });
 
 
-/*--- To start a new game      
-    $("a.new").on("click", function(e){
+/*--- To start a new game    
+    $("a.close").on("click", function(e){
     
     e.preventDefault();
     
@@ -138,8 +139,9 @@ findAnswer();--*/
     }
         $("#count").html("0");
  }); 
----*/ 
-
+$(".song").append(audio here);
+<audio controls> <source src="trinisong.mp3" type="audio/mpeg"> </audio>
+---*/  
 
 
 
