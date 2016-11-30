@@ -41,7 +41,7 @@ var allQuestions = [
     }
 ]
 
-/*--- To change the questions---*/
+/*--- To change and count questions---*/
 var userCorrect = 0;
 var correctAnswer = 0;
 var questionNumber = 0;
@@ -50,6 +50,7 @@ var questionTotal = allQuestions.length;
 
 function createQuestion() {
     $(".question").text(allQuestions[questionNumber].question);
+    $(".count").text("Q" + (questionNumber+1) + " of " + questionTotal);
     var choicesTot = allQuestions[questionNumber].choices.length;
     console.log(choicesTot);
     console.log(allQuestions[questionNumber].question);

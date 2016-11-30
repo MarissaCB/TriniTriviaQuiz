@@ -44,8 +44,15 @@ h3 {
 	text-align: center;
 }
 
-h2, h3, .question, #answer_holder, #factInfo, .resultPage {
+h2, h3, .count, .question, #answer_holder, #factInfo, .resultPage {
 	font-family: 'Philosopher', sans-serif;
+}
+
+.count {
+	font-size: 20px;
+	font-weight: 500;
+	float: right;
+	margin-right: 120px;
 }
 
 #questionSegment {
