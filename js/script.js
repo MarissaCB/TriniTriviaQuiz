@@ -78,6 +78,7 @@ createQuestion();
     $("#feedbackNo").show();
     $("#feedbackYes").hide();
 }  
+    
     $("#factInfo").text(allQuestions[questionNumber].fact);
 
     questionNumber++;
@@ -85,13 +86,26 @@ createQuestion();
 
 });
 
-
-
-/*--- To count correct answers
+/*--- To change display button to a Play again button ---*/
 
     $("#submitButton").on("click", function(){
     if (questionNumber == questionTotal) {
-    $('#userCount').text("You scored " + userCorrect + " out of " + questionTotal);
+    $("#playAgain").show();
+    $("#submitButton").hide();
+}
+    else {
+    $("#submitButton").show();
+    $("#playAgain").hide();
+}
+
+});
+
+
+/*--- To count correct answers---*/
+
+    $(".score").on("click", function(){
+    if (questionNumber == questionTotal) {
+    $('#userCount').text("You got " + userCorrect + " out of " + questionTotal);
 }
     else {
             questionNumber++;
@@ -99,21 +113,7 @@ createQuestion();
         } 
 
 });
----*/
 
-/*--- To count questions
-
-    $("#submitButton").on("click", function(){
-    if (questionNumber == questionTotal) {
-    $('#userCount').text("You scored " + userCorrect + " out of " + questionTotal);
-}
-    else {
-            questionNumber++;
-            createQuestion();
-        } 
-
-});
----*/
 
 
 /*--- Display information modal box ---*/

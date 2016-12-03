@@ -73,13 +73,17 @@ h2, h3, .count, .question, #answer_holder, #factInfo, .resultPage {
 	list-style: none;
 }
 
-#buttonSubmit {
+#buttonSubmit, #playAgain {
 	width: 100%;
 	text-align: center;
 	vertical-align: top;	
 }
 
-#submitButton {
+#playAgain {
+	display: ;
+}
+
+#submitButton, #playAgain {
 	font-size: 18px;
 	margin-top: 20px;
 	border-radius: 5px;
@@ -100,8 +104,6 @@ h2, h3, .count, .question, #answer_holder, #factInfo, .resultPage {
 	font-weight: 100;
 	font-size: 1.525rem;
 	display: none;
-	
-
 }
 
 #factInfo {
@@ -111,8 +113,7 @@ h2, h3, .count, .question, #answer_holder, #factInfo, .resultPage {
 	margin: 0 auto;
 	font-weight: 100;
 	font-size: 1.225rem;
-	margin-top: 50px;
-	
+	margin-top: 50px;	
 }
 
 
@@ -130,6 +131,14 @@ h2, h3, .count, .question, #answer_holder, #factInfo, .resultPage {
 	display: none;
 }
 
+#userCount {
+	width: 100%;
+	padding: 3px 0;	
+	margin-top: 40px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
 .content {
 	color: #fff;
 	background: #d22d2d;
@@ -142,6 +151,7 @@ h2, h3, .count, .question, #answer_holder, #factInfo, .resultPage {
 	border: 1px solid rgba(0,0,0,0.1);
 
 }
+
 
 .content h3 {
 	margin: 0;
@@ -170,7 +180,7 @@ h2, h3, .count, .question, #answer_holder, #factInfo, .resultPage {
 
 .content > a {
 	font-size: 20px;
-	margin-top: 50px;
+	margin-top: 30px;
 	border-radius: 5px;
 	color: black;
 	background-color: pink;
