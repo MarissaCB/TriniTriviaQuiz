@@ -73,14 +73,14 @@ h2, h3, .count, .question, #answer_holder, #factInfo, .resultPage {
 	list-style: none;
 }
 
-#buttonSubmit, #playAgain {
+#buttonSubmit {
 	width: 100%;
 	text-align: center;
 	vertical-align: top;	
 }
 
 #playAgain {
-	display: ;
+	display: none;
 }
 
 #submitButton, #playAgain {

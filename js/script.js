@@ -86,16 +86,15 @@ createQuestion();
 
 });
 
-/*--- To change display button to a Play again button ---*/
+/*--- To change display button to a Play again button 
 
-    $("#submitButton").on("click", function(){
-    if (questionNumber == questionTotal) {
-    $("#playAgain").show();
-    $("#submitButton").hide();
+    if (questionNumber > questionTotal) {
+    $("#submitButton").remove();
+    $("#factInfo").remove();
+    $("#playAgain").css("display", "inline");
 }
     else {
-    $("#submitButton").show();
-    $("#playAgain").hide();
+   
 }
 
 });
